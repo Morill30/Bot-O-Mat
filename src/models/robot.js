@@ -1,4 +1,4 @@
-class Robot {
+export class Robot {
   constructor(id, type, name, tasks) {
     this.id = id;
     this.type = type;
@@ -8,7 +8,7 @@ class Robot {
   }
 }
 
-class UnipedalRobot extends Robot {
+export class UnipedalRobot extends Robot {
   static typeId = "Unipedal Robot";
   constructor(
     id = 1,
@@ -20,7 +20,7 @@ class UnipedalRobot extends Robot {
   }
 }
 
-class BipedalRobot extends Robot {
+export class BipedalRobot extends Robot {
   static typeId = "Bipedal Robot";
   constructor(
     id = 1,
@@ -32,7 +32,7 @@ class BipedalRobot extends Robot {
   }
 }
 
-class QuadrupedalRobot extends Robot {
+export class QuadrupedalRobot extends Robot {
   static typeId = "Quadrupedal Robot";
   constructor(
     id = 1,
@@ -44,14 +44,14 @@ class QuadrupedalRobot extends Robot {
   }
 }
 
-class RadialRobot extends Robot {
+export class RadialRobot extends Robot {
   static typeId = "Radial Robot";
   constructor(id = 1, type = RadialRobot.typeId, name = "Default", tasks = []) {
     super(id, type, name, tasks);
   }
 }
 
-class ArachnidRobot extends Robot {
+export class ArachnidRobot extends Robot {
   static typeId = "Arachnid Robot";
   constructor(
     id = 1,
@@ -63,7 +63,7 @@ class ArachnidRobot extends Robot {
   }
 }
 
-class AeroNauticalRobot extends Robot {
+export class AeroNauticalRobot extends Robot {
   static typeId = "Aeronautical Robot";
   constructor(
     id = 1,
@@ -75,7 +75,7 @@ class AeroNauticalRobot extends Robot {
   }
 }
 
-function getRobotTypeWithId({ typeId, id, name, type }) {
+export function getRobotTypeWithId({ typeId, id, name, type }) {
   let newBot;
   switch (typeId) {
     case UnipedalRobot.typeId:
@@ -101,7 +101,7 @@ function getRobotTypeWithId({ typeId, id, name, type }) {
   }
 }
 
-function getRandomTasks() {
+export function getRandomTasks() {
   let fiveRandomTasks = [];
   for (let i = 0; i < 5; i++) {
     fiveRandomTasks.push(tasks[Math.floor(Math.random() * tasks.length)]);
@@ -178,13 +178,13 @@ const tasks = [
   }
 ];
 
-module.exports = {
-  UnipedalRobot: UnipedalRobot,
-  BipedalRobot: BipedalRobot,
-  ArachnidRobot: ArachnidRobot,
-  QuadrupedalRobot: QuadrupedalRobot,
-  RadialRobot: RadialRobot,
-  AeroNauticalRobot: AeroNauticalRobot,
-  getRobotTypeWithId: getRobotTypeWithId,
-  getRandomTasks: getRandomTasks
-};
+// module.exports = {
+//   UnipedalRobot: UnipedalRobot,
+//   BipedalRobot: BipedalRobot,
+//   ArachnidRobot: ArachnidRobot,
+//   QuadrupedalRobot: QuadrupedalRobot,
+//   RadialRobot: RadialRobot,
+//   AeroNauticalRobot: AeroNauticalRobot,
+//   getRobotTypeWithId: getRobotTypeWithId,
+//   getRandomTasks: getRandomTasks
+// };
