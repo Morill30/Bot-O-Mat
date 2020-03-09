@@ -1,0 +1,67 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+
+.white-pane {
+  /* height: 120px; */
+  width: 95%;
+  margin: auto;
+  margin-top: 10px;
+  background-color: rgb(217, 220, 221);
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.white-pane p {
+  padding-left: 10px;
+}
+
+.taskCard {
+  background-color: rgb(64, 73, 82);
+  /* height: 300px; */
+  width: 95%;
+  margin: auto;
+  overflow: hidden;
+  transition: all 0.6s ease-in-out;
+}
+
+.sm-header {
+  background-color: rgb(39, 112, 72);
+  color: white;
+  height: 30px;
+  padding-left: 10px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.sub-card {
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.blue-header {
+  display: inline-flex;
+  color: white;
+  font-weight: 700;
+  position: relative;
+}
+
+.score {
+  background-color: rgb(41, 60, 71);
+  color: white;
+  font-weight: 700;
+  border-radius: 5px;
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: auto;
+  margin-right: 0px;
+  text-align: center;
+  position: static;
+  float: right;
+}
+
+.vertical-center {
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
