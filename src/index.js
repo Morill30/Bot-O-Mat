@@ -6,6 +6,7 @@ import * as serviceWorker from "./serviceWorker";
 import { createStore } from "redux";
 import allReducers from "./reducers";
 import { Provider } from "react-redux";
+import robotAdderReducer from "./reducers/robotAdderRed";
 
 const store = createStore(allReducers);
 //Store - Where all the data is stored

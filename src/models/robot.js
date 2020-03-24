@@ -46,7 +46,12 @@ export class QuadrupedalRobot extends Robot {
 
 export class RadialRobot extends Robot {
   static typeId = "Radial Robot";
-  constructor(id = 1, type = RadialRobot.typeId, name = "Default", tasks = []) {
+  constructor(
+    id = 1,
+    type = RadialRobot.typeId,
+    name = "Default",
+    tasks = getRandomTasks()
+  ) {
     super(id, type, name, tasks);
   }
 }

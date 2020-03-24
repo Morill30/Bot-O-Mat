@@ -5,7 +5,7 @@ import RobotPane from "./robotPane";
 import { useSelector } from "react-redux";
 
 function LeaderBoard() {
-  const robotAdder = useSelector(state => state.robotAdder);
+  const robotAdder = useSelector(state => state.RobotAdderReducer);
 
   return (
     <div className="container">

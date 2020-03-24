@@ -5,7 +5,7 @@ const bot = require("../models/robot");
 
 function RobotAdder(props) {
   // console.log("im id", this.props.id);
-  const robotAdder = useSelector(state => state.robotAdder);
+  const robotAdder = useSelector(state => state.RobotAdderReducer);
   const dispatch = useDispatch();
   console.log(robotAdder.robotArray);
   return (
